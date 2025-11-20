@@ -30,7 +30,7 @@ def user_input_features():
   return features
 
 df = user_input_features()
-datos =  pd.read_csv('BodyData_df.csv', encoding='latin-1')
+datos =  pd.read_csv('BodyData.csv', encoding='latin-1')
 X = datos.drop(columns='WEIGHT')
 y = datos['WEIGHT']
 
